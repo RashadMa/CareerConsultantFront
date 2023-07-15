@@ -1,0 +1,177 @@
+.logo-ellipse {
+  width: 20px;
+  height: 20px;
+  background: #A1A864;
+  border-radius: 9999px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  display: inline-flex;
+}
+
+.logo-text {
+  color: #4F754A;
+  font-size: 24px;
+  font-family: Raleway;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 100px;
+  width: 85%;
+  background: #FFFFFF;
+}
+.nav-container .nav-list-item {
+  color: #4F754A;
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 500;
+  word-wrap: break-word;
+  margin-right: 70px;
+}
+.nav-container .nav-line {
+  width: 50px;
+  height: 0;
+  transform: rotate(90deg);
+  border: 1px #4F754A solid;
+}
+.nav-container .nav-lang {
+  width: 25px;
+  height: 25px;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+  padding-left: 6px;
+  padding-right: 5px;
+  border-radius: 1000px;
+  border: 0.5px #4F754A solid;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+.nav-container .nav-lang .nav-lang-text {
+  color: #4F754A;
+  font-size: 10px;
+  font-family: Raleway;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.p-20 {
+  margin-right: 20px;
+}
+
+.background-img-wrapper {
+  background-image: url("https://s3-alpha-sig.figma.com/img/eb0c/fe86/875dd34d1b6e1dd507d528af3fff773c?Expires=1690156800&Signature=YrhBnUdFtJnviEERREbH8Vo2bTGgO85IpJL-dmK7~QdWf7QDn0nbGMoklwAhB5Cw5xOFNwPysjxj-oJuIzuaGARQXQfGt9Uc2RPPzwUa38NBJMtK01~Vrzf0G6LZf~J~BJJcrZ86Z2Lmjdt2P6RJXEgNqPeL9HhmDitZEjZrkSev-uAgzcWZM0UzJBdbna23C6rJAP3qrD1yH-cik7Iah61rdV8HWJdMFRswNYS9MFAzflV84jZshmPCDChq-LM3gU64BQh9CpnajLLJp4i3lPRe62T1UhAFlitBiQiQyium-mHsDENb8o32mSyY7C1UUfHEL~cNZO9lxouJZDt~-g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; /* The initial position of the background image */
+}
+.background-img-wrapper .career-consultant {
+  color: #4F754A;
+  font-size: 45px;
+  font-family: Georgia;
+  font-weight: 300;
+  word-wrap: break-word;
+  margin: 86px 0 40px 0;
+}
+.background-img-wrapper .career-consultant-text {
+  width: 678px;
+  text-align: center;
+  color: #342F2A;
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 300;
+  line-height: 26.98px;
+  word-wrap: break-word;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.background-img-wrapper .info-counter-item-wrapper {
+  width: 115px;
+  height: 115px;
+  border-radius: 1000px;
+  overflow: hidden;
+  border: 2px #4F754A solid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px 0 25px;
+  text-align: center;
+}
+.background-img-wrapper .info-counter-item-wrapper .info-counter-item {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  margin-top: 20px;
+}
+.background-img-wrapper .info-counter-item-wrapper .info-counter-item .count {
+  color: #4F754A;
+  font-size: 30px;
+  font-family: Raleway;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.background-img-wrapper .info-counter-item-wrapper .info-counter-item .infos {
+  color: #4F754A;
+  font-size: 16px;
+  font-family: Raleway;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.background-img-wrapper .button {
+  height: 50px;
+  padding: 14px 6% 14px 6%;
+  background: #4F754A;
+  border-radius: 6px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+  transition: all 500ms ease;
+}
+.background-img-wrapper .button-text {
+  color: white;
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+.background-img-wrapper .button-wrapper {
+  padding-top: 40px;
+  padding-bottom: 85px;
+}
+.background-img-wrapper .button-wrapper :hover {
+  background: #32592D;
+}
+
+.layer {
+  position: relative;
+}
+
+.layer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.58);
+  z-index: 1;
+}
+
+.z-index {
+  z-index: 10;
+  position: relative;
+}

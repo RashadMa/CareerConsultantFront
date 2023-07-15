@@ -1,0 +1,117 @@
+.background-img-wrapper {
+      background-image: url("https://s3-alpha-sig.figma.com/img/eb0c/fe86/875dd34d1b6e1dd507d528af3fff773c?Expires=1690156800&Signature=YrhBnUdFtJnviEERREbH8Vo2bTGgO85IpJL-dmK7~QdWf7QDn0nbGMoklwAhB5Cw5xOFNwPysjxj-oJuIzuaGARQXQfGt9Uc2RPPzwUa38NBJMtK01~Vrzf0G6LZf~J~BJJcrZ86Z2Lmjdt2P6RJXEgNqPeL9HhmDitZEjZrkSev-uAgzcWZM0UzJBdbna23C6rJAP3qrD1yH-cik7Iah61rdV8HWJdMFRswNYS9MFAzflV84jZshmPCDChq-LM3gU64BQh9CpnajLLJp4i3lPRe62T1UhAFlitBiQiQyium-mHsDENb8o32mSyY7C1UUfHEL~cNZO9lxouJZDt~-g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center; /* The initial position of the background image */
+
+
+      .career-consultant {
+            color: #4F754A;
+            font-size: 45px;
+            font-family: Georgia;
+            font-weight: 300;
+            word-wrap: break-word;
+            margin: 86px 0 40px 0;
+      }
+
+      .career-consultant-text {
+            width: 678px;
+            text-align: center;
+            color: #342F2A;
+            font-size: 18px;
+            font-family: Raleway;
+            font-weight: 300;
+            line-height: 26.98px;
+            word-wrap: break-word;
+            margin: 0 auto;
+            padding-bottom: 40px;
+      }
+
+      .info-counter-item-wrapper {
+            width: 115px;
+            height: 115px;
+            border-radius: 1000px;
+            overflow: hidden;
+            border: 2px #4F754A solid;
+            justify-content: center;
+            align-items: center;
+            margin: 0 25px 0 25px;
+            text-align: center;
+
+            .info-counter-item {
+                  align-self: stretch;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  display: inline-flex;
+                  margin-top: 20px;
+
+                  .count {
+                        color: #4F754A;
+                        font-size: 30px;
+                        font-family: Raleway;
+                        font-weight: 600;
+                        word-wrap: break-word
+                  }
+
+                  .infos {
+                        color: #4F754A;
+                        font-size: 16px;
+                        font-family: Raleway;
+                        font-weight: 400;
+                        word-wrap: break-word
+                  }
+            }
+      }
+
+      .button {
+            height: 50px;
+            padding: 14px 6% 14px 6%;
+            background: #4F754A;
+            border-radius: 6px;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            display: inline-flex;
+            transition: all 500ms ease;
+      }
+
+      .button-text {
+            color: white;
+            font-size: 18px;
+            font-family: Raleway;
+            font-weight: 500;
+            word-wrap: break-word
+      }
+
+      .button-wrapper {
+            padding-top: 40px;
+            padding-bottom: 85px;
+
+            :hover {
+                  background: #32592D;
+            }
+
+      }
+}
+
+.layer {
+      position: relative;
+}
+
+.layer::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.58);
+      z-index: 1;
+}
+
+.z-index {
+      z-index: 10;
+      position: relative;
+}
