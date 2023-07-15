@@ -74,7 +74,8 @@
   background-image: url("https://s3-alpha-sig.figma.com/img/eb0c/fe86/875dd34d1b6e1dd507d528af3fff773c?Expires=1690156800&Signature=YrhBnUdFtJnviEERREbH8Vo2bTGgO85IpJL-dmK7~QdWf7QDn0nbGMoklwAhB5Cw5xOFNwPysjxj-oJuIzuaGARQXQfGt9Uc2RPPzwUa38NBJMtK01~Vrzf0G6LZf~J~BJJcrZ86Z2Lmjdt2P6RJXEgNqPeL9HhmDitZEjZrkSev-uAgzcWZM0UzJBdbna23C6rJAP3qrD1yH-cik7Iah61rdV8HWJdMFRswNYS9MFAzflV84jZshmPCDChq-LM3gU64BQh9CpnajLLJp4i3lPRe62T1UhAFlitBiQiQyium-mHsDENb8o32mSyY7C1UUfHEL~cNZO9lxouJZDt~-g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; /* The initial position of the background image */
+  background-position: center;
+  margin-bottom: 78px;
 }
 .background-img-wrapper .career-consultant {
   color: #4F754A;
@@ -129,31 +130,29 @@
   font-weight: 400;
   word-wrap: break-word;
 }
+.background-img-wrapper .button-wrapper {
+  padding-top: 40px;
+  padding-bottom: 85px;
+}
+.background-img-wrapper a {
+  text-decoration: none;
+}
 .background-img-wrapper .button {
+  display: inline-block;
   height: 50px;
   padding: 14px 6% 14px 6%;
-  background: #4F754A;
   border-radius: 6px;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  display: inline-flex;
+  background-color: #4F754A;
+  cursor: pointer;
   transition: all 500ms ease;
-}
-.background-img-wrapper .button-text {
   color: white;
   font-size: 18px;
   font-family: Raleway;
   font-weight: 500;
   word-wrap: break-word;
 }
-.background-img-wrapper .button-wrapper {
-  padding-top: 40px;
-  padding-bottom: 85px;
-}
-.background-img-wrapper .button-wrapper :hover {
-  background: #32592D;
+.background-img-wrapper .button:hover {
+  background-color: #32592D;
 }
 
 .layer {
