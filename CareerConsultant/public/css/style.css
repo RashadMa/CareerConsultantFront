@@ -189,3 +189,51 @@
   word-wrap: break-word;
   margin: 0 29px;
 }
+
+.about-me-section {
+  padding-top: 64px;
+}
+.about-me-section .main-place-border {
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1.5px #4F754A solid;
+  border-bottom: 1.5px #4F754A solid;
+}
+.about-me-section .main-place-border .about-me-body {
+  width: 95%;
+  margin: 65px auto;
+}
+.about-me-section .main-place-border .about-me-body .about-me {
+  color: #4F754A;
+  font-size: 35px;
+  font-family: Georgia;
+  font-weight: 300;
+  word-wrap: break-word;
+  margin-bottom: 82px;
+}
+.about-me-section .main-place-border .about-me-body .about-me-text {
+  width: 80%;
+  color: #342F2A;
+  font-size: 16px;
+  font-family: Raleway;
+  font-weight: 300;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+.about-me-section .main-place-border .about-me-body .about-me-img-wrapper {
+  width: 400px;
+  height: 400px;
+  background-image: url("https://s3-alpha-sig.figma.com/img/2efb/5fa7/39835f331a1d15adfd39e7ae63cbc281?Expires=1690761600&Signature=UjXptLSRORmuAt4WbFKsDxQgFxAXM-ZD4Yl10dcTPNphSylLNtr3pe69agWn6ZgRLzu59dd7ysH1lS8Cjll-rdRcvV529DU0OjkWve8sS9-F3gNxmtDnNUd1crTgDATg-gD~sg1xRLVS5rDr5woxTd1K7E3zY2SrheOs3E-m~bCgwq~b0AYeGflxW~phP3LIwkkj5S53qtvxpHYu0NbizL5eepb7GtVvuLpY0wd~JFZaCV2NW7rNq3Nd2vni05lfPJv3DezYXWzuh~vacZkQYxX2ntLcNzDblFrbuGTpgK7vsLOFDj1d1sufEx~VK7nFlqaQnQkDXwBXCMpMz6vFUw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.about-me-section .main-place-border .about-me-body .about-me-img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 2000px;
+}
