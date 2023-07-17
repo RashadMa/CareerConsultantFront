@@ -1,0 +1,16 @@
+#carousel {
+      border: 1.5px solid #4F754A;
+
+      .slide {
+            display: flex !important;
+
+            .slide-text {
+                  color: #342F2A;
+                  font-size: 30px;
+                  font-family: Georgia;
+                  font-weight: 300;
+                  word-wrap: break-word;
+                  margin: 0 29px;
+            }
+      }
+}

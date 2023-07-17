@@ -174,3 +174,18 @@
   z-index: 10;
   position: relative;
 }
+
+#carousel {
+  border: 1.5px solid #4F754A;
+}
+#carousel .slide {
+  display: flex !important;
+}
+#carousel .slide .slide-text {
+  color: #342F2A;
+  font-size: 30px;
+  font-family: Georgia;
+  font-weight: 300;
+  word-wrap: break-word;
+  margin: 0 29px;
+}
