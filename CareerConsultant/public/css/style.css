@@ -192,6 +192,7 @@
 
 .about-me-section {
   padding-top: 64px;
+  padding-bottom: 178px;
 }
 .about-me-section .main-place-border {
   width: 90%;
@@ -234,6 +235,47 @@
   height: 100%;
 }
 
+.services-section .services {
+  color: #4F754A;
+  font-size: 35px;
+  font-family: Georgia;
+  font-weight: 300;
+  word-wrap: break-word;
+  margin-bottom: 90px;
+}
+.services-section .svg-border {
+  border: 1px solid #4F754A;
+  padding: 10px;
+  width: 76px;
+  height: 82;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+.services-section .services-underline {
+  width: 100%;
+  border: 0.5px #4F754A solid;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.services-section .services-text {
+  color: #342F2A;
+  font-size: 16px;
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+  width: 70%;
+}
+.services-section .services-cols {
+  padding-right: 86.2px;
+}
+.services-section .services-cols:nth-child(4n) {
+  padding-right: 0;
+}
+
 body {
-  height: 2000px;
+  height: 3000px;
 }
