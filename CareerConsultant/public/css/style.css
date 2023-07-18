@@ -269,11 +269,26 @@
   word-wrap: break-word;
   width: 70%;
 }
-.services-section .services-cols {
-  padding-right: 86.2px;
+.services-section .all-services {
+  justify-content: end;
+  display: flex;
+  align-items: center;
 }
-.services-section .services-cols:nth-child(4n) {
-  padding-right: 0;
+.services-section .all-services .services-button {
+  color: #4F754A;
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.services-section .container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 82.6px;
+  padding-bottom: 50px;
+}
+.services-section .col-3-grid {
+  grid-row: span 3;
 }
 
 body {

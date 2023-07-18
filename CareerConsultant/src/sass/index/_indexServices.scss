@@ -37,11 +37,30 @@
             width: 70%;
       }
 
-      .services-cols {
-            padding-right: 86.2px;
+      .all-services {
+            justify-content: end;
+            display: flex;
+            align-items: center;
 
-            &:nth-child(4n) {
-                  padding-right: 0;
+            .services-button {
+                  color: #4F754A;
+                  font-size: 18px;
+                  font-family: Raleway;
+                  font-weight: 600;
+                  word-wrap: break-word;
+                  // padding-right: 10px;
+
             }
+      }
+
+      .container-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 82.6px;
+            padding-bottom: 50px;
+      }
+
+      .col-3-grid {
+            grid-row: span 3;
       }
 }
