@@ -519,7 +519,59 @@
   transform: translateY(-50%) rotate(135deg);
 }
 
+.any-questions {
+  margin-top: 164px;
+}
+.any-questions .HaveAnyQuestions {
+  width: 100%;
+  color: #4F754A;
+  font-size: 35px;
+  font-family: Georgia;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-bottom: 61px;
+}
+.any-questions .contact-info {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  display: inline-flex;
+}
+.any-questions .contact-info .contact {
+  width: 73px;
+  color: #4F754A;
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 600;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+.any-questions .contact-info .contact-wrapper {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  display: flex;
+}
+.any-questions .contact-info .contact-wrapper .contact-items {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+.any-questions .contact-info .contact-wrapper .contact-items .gmail {
+  color: #342F2A;
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 25.2px;
+  word-wrap: break-word;
+}
+
 body {
-  height: 4000px;
+  height: 5000px;
   background-color: #F8F7F1;
 }
