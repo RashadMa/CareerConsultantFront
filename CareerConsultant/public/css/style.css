@@ -205,6 +205,12 @@
   word-wrap: break-word;
   margin: 0 29px;
 }
+#carousel .slick-arrow {
+  display: none !important;
+}
+#carousel .slick-prev {
+  display: none;
+}
 
 .about-me-section {
   padding-top: 64px;

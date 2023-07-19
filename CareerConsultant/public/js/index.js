@@ -23,3 +23,13 @@ $("#carousel").slick({
     },
   ],
 });
+
+// $('.slider').slick({
+//   autoplay: true,
+//   autoplaySpeed: 0,
+//   speed: 2500,
+//   slidesToShow: 4,       
+//   cssEase: "linear",
+//   pauseOnHover: false,    //added(do not stop when hovered
+//   pauseOnFocus: false,    //added(Do not stop when focused
+// });
