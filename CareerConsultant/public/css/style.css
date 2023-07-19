@@ -438,6 +438,87 @@
   bottom: 53%;
 }
 
+.faq {
+  padding-top: 227px;
+}
+.faq .faq-wrapper {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 35px;
+  display: inline-flex;
+}
+.faq .faq-wrapper .faq-header {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+.faq .faq-wrapper .faq-header .Faq {
+  width: 71px;
+  color: #4F754A;
+  font-size: 35px;
+  font-family: Georgia;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.faq .faq-wrapper .faq-header .faq-text {
+  width: 341px;
+  color: #342F2A;
+  font-size: 16px;
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+.faq .faq-wrapper .accordion {
+  border-bottom: 3px solid #4F754A;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.faq .faq-wrapper .accordion-header {
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  color: #342F2A;
+  font-size: 16px;
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+.faq .faq-wrapper .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.faq .faq-wrapper .accordion-content p {
+  padding: 10px;
+  color: #342F2A;
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+.faq .faq-wrapper .accordion-header::after {
+  content: "";
+  border-style: solid;
+  border-width: 0.15em 0.15em 0 0;
+  display: inline-block;
+  padding: 0.25em;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.faq .faq-wrapper .accordion.open .accordion-header::after {
+  transform: translateY(-50%) rotate(135deg);
+}
+
 body {
   height: 4000px;
   background-color: #F8F7F1;

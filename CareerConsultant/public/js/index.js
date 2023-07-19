@@ -24,12 +24,16 @@ $("#carousel").slick({
   ],
 });
 
-// $('.slider').slick({
-//   autoplay: true,
-//   autoplaySpeed: 0,
-//   speed: 2500,
-//   slidesToShow: 4,       
-//   cssEase: "linear",
-//   pauseOnHover: false,    //added(do not stop when hovered
-//   pauseOnFocus: false,    //added(Do not stop when focused
-// });
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(accordionHeader => {
+  accordionHeader.addEventListener('click', () => {
+    const accordionContent = accordionHeader.nextElementSibling;
+    accordionHeader.parentElement.classList.toggle('open');
+    if (accordionHeader.parentElement.classList.contains('open')) {
+      accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+    } else {
+      accordionContent.style.maxHeight = 0;
+    }
+  });
+});
