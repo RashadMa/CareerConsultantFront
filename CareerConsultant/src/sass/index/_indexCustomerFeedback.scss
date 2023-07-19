@@ -1,0 +1,144 @@
+.customer-feedback-section {
+      padding-top: 143.5px;
+
+      .customer-feedback-header {
+            width: 50%;
+            color: #4F754A;
+            font-size: 35px;
+            font-family: Georgia;
+            font-weight: 400;
+            word-wrap: break-word;
+            padding-bottom: 26px;
+      }
+
+      .customer-feedback-text {
+            width: 66%;
+            color: #342F2A;
+            font-size: 16px;
+            font-family: Raleway;
+            font-weight: 400;
+            line-height: 22.40px;
+            word-wrap: break-word
+      }
+
+      .c-f-wrapper {
+            flex-direction: column;
+      }
+
+      .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            position: relative;
+
+            .grid-item {
+                  width: 84%;
+                  border: 2px solid #ccc;
+                  display: flex;
+                  justify-content: center;
+                  padding: 19px;
+                  text-align: center;
+            }
+            .feedback-items-wrapper {
+                  margin-top: 10%;
+                  display: flex;
+                  flex-direction: column;
+
+                  .feedback-img {
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 100%;
+                        object-fit: cover;
+                        margin: 0 auto;
+                  }
+
+                  .feedback-header {
+                        width: 100%;
+                        text-align: center;
+                        color: #5F5851;
+                        font-size: 14px;
+                        font-family: Raleway;
+                        font-weight: 500;
+                        line-height: 19.60px;
+                        word-wrap: break-word;
+                        margin-top: 19px
+                  }
+
+                  .feedback-name {
+                        width: 100%;
+                        text-align: center;
+                        color: #4F754A;
+                        font-size: 16px;
+                        font-family: Raleway;
+                        font-weight: 600;
+                        word-wrap: break-word;
+                        margin-top: 5px;
+                  }
+
+                  .feedback-text {
+                        color: #342F2A;
+                        font-size: 16px;
+                        font-family: Raleway;
+                        font-weight: 400;
+                        line-height: 22.40px;
+                        word-wrap: break-word;
+                        margin-top: 5px;
+                  }
+            }
+
+            .item1 {
+                  height: 386px;
+                  border: 2px #4F754A solid;
+                  border-radius: 6px;
+
+                  
+            }
+
+            .item2 {
+                  height: 337px;
+                  border: 2px #4F754A solid;
+                  border-radius: 6px;
+
+            }
+
+            .item3 {
+                  height: 337px;
+                  border: 2px #4F754A solid;
+                  border-radius: 6px;
+
+            }
+
+            .item4 {
+                  height: 386px;
+                  margin-top: -49px;
+                  border: 2px #4F754A solid;
+                  border-radius: 6px;
+            }
+
+            .line9 {
+                  width: 1px;
+                  height: 794px;
+                  border: 1px #4F754A solid;
+                  position: absolute;
+                  right: 53.5%;
+            }
+
+            .line8 {
+                  width: 420px;
+                  height: 1px;
+                  border: 1px #4F754A solid;
+                  position: absolute;
+                  left: -3%;
+                  bottom: 46.7%;
+            }
+
+            .line7 {
+                  width: 420px;
+                  height: 1px;
+                  border: 1px #4F754A solid;
+                  position: absolute;
+                  right: 4%;
+                  bottom: 53%;
+            }
+      }
+}
