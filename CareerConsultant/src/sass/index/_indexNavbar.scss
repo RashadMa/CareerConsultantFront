@@ -88,12 +88,12 @@
 }
 
 @media (max-width: 1024px) {
-      .nav-links {
-            display: none !important;
+      .nav-container .nav-wrapper .col-6 .nav-links {
+            display: none;
       }
 
-      .hamburger-menu {
-            display: flex !important;
+      .nav-container .nav-wrapper .col-6 .hamburger-menu {
+            display: flex;
             cursor: pointer;
             justify-content: end;
       }
