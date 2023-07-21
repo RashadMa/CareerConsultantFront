@@ -351,6 +351,7 @@
 @media (max-width: 1024px) {
   .about-me-section {
     padding-top: 40px;
+    padding-bottom: 60px;
   }
   .about-me-section .main-place-border .about-me {
     font-size: 18px;
@@ -409,6 +410,13 @@
   word-wrap: break-word;
   width: 85%;
 }
+.services-section .services-header {
+  color: #5A5754;
+  font-size: 16px;
+  font-family: Raleway;
+  font-weight: 600;
+  word-wrap: break-word;
+}
 .services-section .all-services {
   justify-content: end;
   display: flex;
@@ -431,6 +439,40 @@
   grid-row: span 3;
 }
 
+@media (max-width: 1024px) {
+  .services-section .container-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .services-section .container-grid .services-cols {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .services-section .container-grid .services-cols .services-underline {
+    width: 85%;
+  }
+  .services-section .container-grid .services-cols .services-text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+  }
+  .services-section .container-grid .services-cols .services-header {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+  }
+  .services-section .services {
+    font-size: 18px;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: unset;
+    margin-bottom: 50px;
+  }
+}
 .customer-feedback-section {
   padding-top: 143.5px;
 }
