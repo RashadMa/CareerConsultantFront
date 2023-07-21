@@ -1,5 +1,5 @@
 $("#carousel").slick({
-  slidesToShow: 4,
+  slidesToShow: 3,
   autoplay: true,
   autoplaySpeed: 0,
   speed: 2000,

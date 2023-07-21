@@ -2,24 +2,31 @@
       padding-top: 64px;
       padding-bottom: 178px;
 
-      .main-place-border {
+      .test {
+            margin: 65px auto !important;
+      }
+
+      .Line6 {
             width: 90%;
+            height: 1px;
+            border: 1px #4F754A solid;
             margin: 0 auto;
-            border-top: 1.5px #4F754A solid;
-            border-bottom: 1.5px #4F754A solid;
+      }
+
+      .main-place-border {
+            margin: 0 auto;
+
+            .about-me {
+                  color: #4F754A;
+                  font-size: 35px;
+                  font-family: Georgia;
+                  font-weight: 300;
+                  word-wrap: break-word;
+                  margin-bottom: 82px;
+            }
 
             .about-me-body {
                   width: 95%;
-                  margin: 65px auto;
-
-                  .about-me {
-                        color: #4F754A;
-                        font-size: 35px;
-                        font-family: Georgia;
-                        font-weight: 300;
-                        word-wrap: break-word;
-                        margin-bottom: 82px;
-                  }
 
                   .about-me-text {
                         width: 80%;
@@ -45,6 +52,41 @@
                   .about-me-img {
                         width: 100%;
                         height: 100%;
+                  }
+            }
+      }
+}
+
+@media (max-width: 1024px) {
+      .about-me-section {
+            padding-top: 40px;
+
+            .main-place-border {
+                  .about-me {
+                        font-size: 18px;
+                        font-weight: 400;
+                        word-wrap: break-word;
+                        margin-bottom: 25px;
+
+                  }
+
+                  .about-me-body {
+                        flex-direction: column-reverse;
+
+                        .about-me-text {
+                              margin: 0 auto;
+                              text-align: center;
+                              font-size: 16px;
+                              font-weight: 400;
+                              line-height: 22.40px;
+                              word-wrap: break-word;
+                              margin-top: 30px;
+                        }
+
+                        .about-me-img-wrapper {
+                              width: 213px;
+                              height: 213px;
+                        }
                   }
             }
       }

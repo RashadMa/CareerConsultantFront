@@ -15,10 +15,28 @@
             }
       }
 
-      .slick-arrow{
+      .slick-arrow {
             display: none !important;
       }
+
       .slick-prev {
             display: none;
+      }
+}
+
+@media (max-width: 1024px) {
+      #carousel {
+            .slide {
+                  .slide-text {
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                  }
+                  svg{
+                        width: 55px;
+                        height: 55px;
+                  }
+            }
       }
 }
