@@ -833,7 +833,6 @@
 .any-questions .text-area .text-area-himself {
   display: flex;
   height: 184px;
-  padding: 16px 513px 146px 20px;
   align-items: center;
   resize: none;
 }
@@ -858,6 +857,37 @@
   margin-top: 61px;
 }
 
+@media (max-width: 1024px) {
+  .any-questions {
+    margin-top: 60px;
+  }
+  .any-questions .HaveAnyQuestions {
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+  }
+  .any-questions .contact-info .contact {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+  .any-questions .contact-info .contact-wrapper .contact-items .gmail {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+  }
+  .any-questions .name,
+  .any-questions .email,
+  .any-questions .message {
+    margin: 30px 0 15px 0;
+  }
+  .any-questions .text-area {
+    margin-top: 0;
+  }
+}
 .footer {
   margin-top: 172px;
 }
@@ -867,19 +897,30 @@
   background: #4F754A;
   justify-content: center;
   align-items: center;
-  display: inline-flex;
+  display: flex;
 }
 .footer .footer-wrapper .copyright {
-  width: 398px;
-  height: 20px;
   color: white;
   font-size: 16px;
   font-family: Raleway;
   font-weight: 400;
   line-height: 22.4px;
-  word-wrap: break-word;
 }
 
+@media (max-width: 1024px) {
+  .footer {
+    margin-top: 60px;
+  }
+  .footer .footer-wrapper {
+    height: 40px;
+  }
+  .footer .footer-wrapper .copyright {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.88px;
+  }
+}
 body {
   background-color: #F8F7F1;
 }

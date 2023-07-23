@@ -7,17 +7,31 @@
             background: #4F754A;
             justify-content: center;
             align-items: center;
-            display: inline-flex;
+            display: flex;
 
             .copyright {
-                  width: 398px;
-                  height: 20px;
                   color: white;
                   font-size: 16px;
                   font-family: Raleway;
                   font-weight: 400;
                   line-height: 22.40px;
-                  word-wrap: break-word
+            }
+      }
+}
+
+@media (max-width: 1024px) {
+      .footer {
+            margin-top: 60px;
+
+            .footer-wrapper {
+                  height: 40px;
+
+                  .copyright {
+                        color: white;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 16.88px;
+                  }
             }
       }
 }

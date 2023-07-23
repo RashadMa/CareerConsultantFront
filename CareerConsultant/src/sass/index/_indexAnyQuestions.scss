@@ -90,7 +90,7 @@
             .text-area-himself {
                   display: flex;
                   height: 184px;
-                  padding: 16px 513px 146px 20px;
+                  // padding: 16px 513px 146px 20px;
                   align-items: center;
                   resize: none;
             }
@@ -115,5 +115,49 @@
             line-height: normal;
             border: none;
             margin-top: 61px;
+      }
+}
+
+@media (max-width: 1024px) {
+      .any-questions {
+            margin-top: 60px;
+
+            .HaveAnyQuestions {
+                  font-size: 20px;
+                  font-weight: 400;
+                  word-wrap: break-word;
+                  margin-bottom: 30px;
+            }
+
+            .contact-info {
+
+                  .contact {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        word-wrap: break-word
+                  }
+
+                  .contact-wrapper {
+                        .contact-items {
+                              .gmail {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 22.40px;
+                                    word-wrap: break-word;
+                              }
+                        }
+                  }
+            }
+
+            .name,
+            .email,
+            .message {
+                  margin: 30px 0 15px 0;
+            }
+
+            .text-area {
+                  margin-top: 0;
+            }
       }
 }
