@@ -598,6 +598,50 @@
   bottom: 53%;
 }
 
+@media (max-width: 1024px) {
+  .customer-feedback-section {
+    padding-top: 60.5px;
+  }
+  .customer-feedback-section .customer-feedback-header {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: unset;
+  }
+  .customer-feedback-section .customer-feedback-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+    width: 100%;
+  }
+  .customer-feedback-section .c-f-wrapper {
+    padding-bottom: 50px;
+  }
+  .customer-feedback-section .grid-container .grid-item .feedback-header {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18.23px;
+    word-wrap: break-word;
+  }
+  .customer-feedback-section .grid-container .grid-item .feedback-img {
+    width: 50px;
+    height: 50px;
+  }
+  .customer-feedback-section .grid-container .grid-item .feedback-name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21.27px;
+    word-wrap: break-word;
+  }
+  .customer-feedback-section .grid-container .grid-item .feedback-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    word-wrap: break-word;
+  }
+}
 .faq {
   padding-top: 227px;
 }
@@ -640,7 +684,7 @@
   overflow: hidden;
 }
 .faq .faq-wrapper .accordion-header {
-  padding: 10px;
+  padding: 10px 0 10px 0;
   cursor: pointer;
   position: relative;
   color: #342F2A;
@@ -679,6 +723,33 @@
   transform: translateY(-50%) rotate(-45deg);
 }
 
+@media (max-width: 1024px) {
+  .faq {
+    padding-top: 0;
+  }
+  .faq .faq-wrapper .faq-header .faq-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.98px;
+    word-wrap: break-word;
+  }
+  .faq .faq-wrapper .faq-header .Faq {
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  .faq .faq-wrapper .accordion .accordion-header {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+    text-align: unset;
+    width: 95%;
+  }
+  .faq .faq-wrapper .accordion-header::after {
+    right: -10px;
+  }
+}
 .any-questions {
   margin-top: 164px;
 }
