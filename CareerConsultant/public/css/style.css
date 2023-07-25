@@ -539,7 +539,7 @@ nav ul.active {
   position: relative;
 }
 .customer-feedback-section .grid-container .grid-item {
-  width: 84%;
+  width: 100%;
   border: 2px solid #ccc;
   display: flex;
   justify-content: center;
@@ -611,30 +611,31 @@ nav ul.active {
 }
 .customer-feedback-section .grid-container .line9 {
   width: 1px;
-  height: 794px;
+  height: 102%;
   border: 1px #4F754A solid;
   position: absolute;
-  right: 53.5%;
+  right: 49.9%;
 }
 .customer-feedback-section .grid-container .line8 {
-  width: 420px;
+  width: 50%;
   height: 1px;
   border: 1px #4F754A solid;
   position: absolute;
-  left: -3%;
+  left: -2.6%;
   bottom: 46.7%;
 }
 .customer-feedback-section .grid-container .line7 {
-  width: 420px;
+  width: 50%;
   height: 1px;
   border: 1px #4F754A solid;
   position: absolute;
-  right: 4%;
+  right: -2.7%;
   bottom: 53%;
 }
 
 @media (max-width: 1024px) {
   .customer-feedback-section {
+    padding-bottom: 70px;
     padding-top: 60.5px;
   }
   .customer-feedback-section .customer-feedback-header {
@@ -653,6 +654,12 @@ nav ul.active {
   }
   .customer-feedback-section .c-f-wrapper {
     padding-bottom: 50px;
+  }
+  .customer-feedback-section .grid-container {
+    gap: 20px;
+  }
+  .customer-feedback-section .grid-container .grid-item {
+    padding: 8px;
   }
   .customer-feedback-section .grid-container .grid-item .feedback-header {
     font-size: 12px;
@@ -849,7 +856,7 @@ nav ul.active {
 }
 .any-questions .form-control {
   display: flex;
-  padding: 16px 168px 16px 20px;
+  padding: 16px;
   align-items: center;
   border-radius: 4px;
   border: 1px solid var(--main-color-1, #4F754A);
@@ -868,6 +875,7 @@ nav ul.active {
 .any-questions .text-area .text-area-himself {
   display: flex;
   height: 184px;
+  padding: 16px;
   align-items: center;
   resize: none;
 }
