@@ -1,0 +1,55 @@
+.service-background-section {
+      background-image: url("../assets/media/background/unsplash_pUAM5hPaCRI.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      .service-wrapper {
+            padding: 308px 0 208px 0;
+            margin: 0 auto;
+
+
+            .services-header {
+                  padding-bottom: 20px;
+                  color: #4F754A;
+                  font-size: 45px;
+                  font-family: Georgia;
+                  font-weight: 400;
+                  word-wrap: break-word;
+                  text-align: center;
+            }
+
+            .service-paragraph {
+                  color: #342F2A;
+                  font-size: 18px;
+                  font-family: Raleway;
+                  font-weight: 400;
+                  line-height: 25.20px;
+                  word-wrap: break-word;
+                  text-align: center;
+                  padding-bottom: 28px;
+            }
+
+            .btn-primary {
+                  display: flex;
+                  width: 234px;
+                  height: 50px;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  flex-shrink: 0;
+                  border-radius: 6px;
+                  background: var(--main-color-1, #4F754A);
+                  color: #FFF;
+                  font-family: Raleway;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+                  border: none;
+                  margin-top: 61px;
+                  word-wrap: break-word;
+                  margin: 0 auto;
+            }
+      }
+}
