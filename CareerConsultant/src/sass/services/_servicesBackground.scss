@@ -53,3 +53,29 @@
             }
       }
 }
+
+@media (max-width: 1024px) {
+      .service-background-section {
+            background-repeat: no-repeat;
+            background-size:cover;
+
+            .service-wrapper {
+                  padding: 92px 0 43px 0;
+
+                  .services-header {
+                        padding-bottom: 10px;
+                        font-size: 20px;
+                        font-weight: 400;
+                  }
+
+                  .service-paragraph {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22.40px;
+                        width: 70%;
+                        text-align: center;
+                        margin: 0 auto;
+                  }
+            }
+      }
+}
