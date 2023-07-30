@@ -1354,6 +1354,104 @@ input[type=file] {
     height: 45px;
   }
 }
+.success-section {
+  padding-top: 245px;
+  padding-bottom: 145;
+}
+.success-section .success-wrapper {
+  flex-direction: column;
+}
+.success-section .success-wrapper .circle-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4F754A;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+.success-section .success-wrapper .success-header {
+  color: #4F754A;
+  font-size: 45px;
+  font-family: Georgia;
+  font-weight: 400;
+  word-wrap: break-word;
+  padding-top: 55px;
+}
+.success-section .success-wrapper .success-paragraph {
+  color: #342F2A;
+  font-size: 16px;
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+  padding-top: 25px;
+  padding-bottom: 77px;
+  text-align: center;
+}
+.success-section .success-wrapper .next {
+  color: #4F754A;
+  font-size: 30px;
+  font-family: Georgia;
+  font-weight: 400;
+  word-wrap: break-word;
+  padding-bottom: 30px;
+}
+.success-section .success-wrapper .success-ending {
+  color: #342F2A;
+  font-size: 16px;
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+.success-section .success-wrapper .ending-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.success-section .success-wrapper .ending-wrapper .ellipse {
+  width: 20px;
+  height: 20px;
+  background: #4F754A;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+  .success-section {
+    padding-top: 157px;
+  }
+  .success-section .circle-success {
+    width: 80px;
+    height: 80px;
+  }
+  .success-section .success-wrapper .success-header {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 20px;
+  }
+  .success-section .success-wrapper .success-paragraph {
+    padding-top: 18px;
+    padding-bottom: 50px;
+  }
+  .success-section .success-wrapper .next {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .success-section .success-wrapper .ending-wrapper .ellipse {
+    width: 14px;
+    height: 14px;
+  }
+  .success-section .success-wrapper .test {
+    align-items: center;
+  }
+}
 body {
   background-color: #F8F7F1;
 }
