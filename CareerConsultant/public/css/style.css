@@ -1128,6 +1128,232 @@ nav ul.active {
     width: unset;
   }
 }
+.preperation-section {
+  padding: 180px 0 100px 0;
+}
+.preperation-section .preperation-wrapper .preperation-contents .preperation-header {
+  color: var(--main-color-1, #4F754A);
+  font-family: Georgia;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 40px;
+}
+.preperation-section .preperation-wrapper .preperation-contents .preperation-paragraph {
+  padding-bottom: 65px;
+  color: var(--text-color, #342F2A);
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  width: 68%;
+}
+.preperation-section .preperation-wrapper .preperation-contents .about-price {
+  color: var(--main-color-1, #4F754A);
+  font-family: Georgia;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 40px;
+}
+.preperation-section .preperation-wrapper .preperation-contents .dots-future {
+  padding-bottom: 20px;
+}
+.preperation-section .preperation-wrapper .preperation-contents .dots-future .future-ellipse {
+  width: 15px;
+  height: 15px;
+  background: #4F754A;
+  border-radius: 9999px;
+}
+.preperation-section .preperation-wrapper .preperation-contents .dots-future .l-futures {
+  color: var(--text-color, #342F2A);
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  padding-left: 8px;
+}
+.preperation-section .preperation-wrapper .preperation-img {
+  justify-content: right;
+}
+
+@media (max-width: 1024px) {
+  .preperation-section {
+    padding: 91px 0 100px 0;
+  }
+  .preperation-section .preperation-wrapper {
+    flex-direction: column-reverse;
+  }
+  .preperation-section .preperation-wrapper .preperation-contents .preperation-header {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: unset;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .preperation-section .preperation-wrapper .preperation-contents .preperation-paragraph {
+    width: unset;
+    padding: unset;
+  }
+  .preperation-section .preperation-wrapper .preperation-contents .about-price {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .preperation-section .preperation-wrapper .preperation-img img {
+    width: 100%;
+  }
+}
+.fill-blanks-section {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 55px;
+}
+.fill-blanks-section .blanks-wrapper .blanks-header {
+  color: var(--main-color-1, #4F754A);
+  font-family: Georgia;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 80px;
+}
+.fill-blanks-section .blanks-wrapper .blanks-inputs-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 81px;
+  margin-bottom: 81px;
+}
+.fill-blanks-section .blanks-wrapper .note-label,
+.fill-blanks-section .blanks-wrapper .resume-label,
+.fill-blanks-section .blanks-wrapper .linkedin-label,
+.fill-blanks-section .blanks-wrapper .email-label,
+.fill-blanks-section .blanks-wrapper .phonenumber-label,
+.fill-blanks-section .blanks-wrapper .surname-label,
+.fill-blanks-section .blanks-wrapper .name-label {
+  color: var(--text-color, #2C2C2D);
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143.682%;
+  margin-bottom: 15px;
+}
+.fill-blanks-section .blanks-wrapper .form-control {
+  display: flex;
+  width: 100%;
+  padding: 11px 20px 11px 20px;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #BDBDBD;
+  background: #FFF;
+}
+.fill-blanks-section .blanks-wrapper .form-control::placeholder {
+  color: #7A7A7A;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143.682%;
+}
+.fill-blanks-section .blanks-wrapper .btn-primary {
+  display: flex;
+  width: 234px;
+  height: 50px;
+  padding: 14px 70px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--main-color-1, #4F754A);
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  margin-top: 46px;
+}
+.fill-blanks-section .blanks-wrapper .right {
+  justify-content: right;
+}
+.fill-blanks-section .blanks-wrapper .country-select {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 14px;
+}
+.fill-blanks-section .blanks-wrapper .form-control-country {
+  border-radius: 4px;
+  border: 1px solid #BDBDBD;
+  background: #FFF;
+}
+
+.footer-services {
+  margin: 0;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.custom-file-label {
+  width: 100%;
+  padding: 7px 20px 8px 20px;
+  color: #5D7EA4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #5D7EA4;
+  background: #FFF;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143.682%;
+}
+
+@media (max-width: 1024px) {
+  .fill-blanks-section {
+    padding-top: 50px;
+  }
+  .fill-blanks-section .blanks-wrapper .blanks-header {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 30px;
+    text-align: unset;
+  }
+  .fill-blanks-section .blanks-wrapper .blanks-inputs-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    margin-bottom: 81px;
+  }
+  .fill-blanks-section .blanks-wrapper .btn-primary {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 147px;
+    height: 45px;
+  }
+}
 body {
   background-color: #F8F7F1;
 }

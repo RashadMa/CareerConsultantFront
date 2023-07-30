@@ -1,0 +1,106 @@
+.preperation-section {
+      padding: 180px 0 100px 0;
+
+      .preperation-wrapper {
+            .preperation-contents {
+                  .preperation-header {
+                        color: var(--main-color-1, #4F754A);
+                        font-family: Georgia;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        padding-bottom: 40px;
+                  }
+
+                  .preperation-paragraph {
+                        padding-bottom: 65px;
+                        color: var(--text-color, #342F2A);
+                        font-family: Raleway;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 140%;
+                        width: 68%;
+                  }
+
+                  .about-price {
+                        color: var(--main-color-1, #4F754A);
+                        font-family: Georgia;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        padding-bottom: 40px;
+                  }
+
+                  .dots-future {
+                        padding-bottom: 20px;
+
+                        .future-ellipse {
+                              width: 15px;
+                              height: 15px;
+                              background: #4F754A;
+                              border-radius: 9999px
+                        }
+
+                        .l-futures {
+                              color: var(--text-color, #342F2A);
+                              font-family: Raleway;
+                              font-size: 16px;
+                              font-style: normal;
+                              font-weight: 400;
+                              line-height: 140%;
+                              padding-left: 8px;
+                        }
+                  }
+            }
+
+            .preperation-img {
+                  justify-content: right;
+            }
+      }
+}
+
+@media (max-width: 1024px) {
+      .preperation-section {
+            padding: 91px 0 100px 0;
+
+            .preperation-wrapper {
+                  flex-direction: column-reverse;
+
+                  .preperation-contents {
+
+                        .preperation-header {
+                              font-size: 18px;
+                              font-style: normal;
+                              font-weight: 400;
+                              line-height: normal;
+                              text-align: unset;
+                              padding-top: 30px;
+                              padding-bottom: 30px;
+                        }
+
+                        .preperation-paragraph {
+                              width: unset;
+                              padding: unset;
+                        }
+
+                        .about-price {
+                              font-size: 18px;
+                              font-style: normal;
+                              font-weight: 400;
+                              line-height: normal;
+                              padding-top: 30px;
+                              padding-bottom: 30px;
+                        }
+                  }
+
+                  .preperation-img {
+                        img {
+                              width: 100%;
+                        }
+                  }
+            }
+      }
+}
