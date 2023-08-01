@@ -371,7 +371,7 @@ nav ul.active {
 .about-me-section .main-place-border .about-me-body .about-me-img-wrapper {
   width: 400px;
   height: 400px;
-  background-image: url("https://s3-alpha-sig.figma.com/img/2efb/5fa7/39835f331a1d15adfd39e7ae63cbc281?Expires=1690761600&Signature=UjXptLSRORmuAt4WbFKsDxQgFxAXM-ZD4Yl10dcTPNphSylLNtr3pe69agWn6ZgRLzu59dd7ysH1lS8Cjll-rdRcvV529DU0OjkWve8sS9-F3gNxmtDnNUd1crTgDATg-gD~sg1xRLVS5rDr5woxTd1K7E3zY2SrheOs3E-m~bCgwq~b0AYeGflxW~phP3LIwkkj5S53qtvxpHYu0NbizL5eepb7GtVvuLpY0wd~JFZaCV2NW7rNq3Nd2vni05lfPJv3DezYXWzuh~vacZkQYxX2ntLcNzDblFrbuGTpgK7vsLOFDj1d1sufEx~VK7nFlqaQnQkDXwBXCMpMz6vFUw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  background-image: url("../assets/media/background/SelfImg.jpg");
   border-radius: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1052,7 +1052,14 @@ nav ul.active {
 }
 .all-services-line .all-service-wrapper .service-cards .svg-border {
   border: 1px solid #4F754A;
-  border-radius: 5px;
+  padding: 10px;
+  width: 76px;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-bottom: 15px;
 }
 .all-services-line .all-service-wrapper .service-cards .service-content {
   color: #5A5754;

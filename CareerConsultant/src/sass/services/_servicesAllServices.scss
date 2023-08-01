@@ -13,7 +13,14 @@
 
                   .svg-border {
                         border: 1px solid #4F754A;
-                        border-radius: 5px;
+                        padding: 10px;
+                        width: 76px;
+                        height: 82px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 3px;
+                        margin-bottom: 15px;
                   }
 
                   .service-content {
