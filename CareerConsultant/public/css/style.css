@@ -140,7 +140,6 @@ nav ul.active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 78px;
 }
 .background-img-wrapper .career-consultant {
   color: #4F754A;
@@ -241,7 +240,7 @@ nav ul.active {
 }
 
 .background-section {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 @media (max-width: 1024px) {
@@ -301,17 +300,20 @@ nav ul.active {
 #carousel {
   border: 1.5px solid #4F754A;
   width: 100% !important;
+  margin-top: 105px;
+  margin-bottom: 100px;
 }
-#carousel .slide {
+#carousel .slider-item {
   display: flex !important;
 }
-#carousel .slide .slide-text {
-  color: #342F2A;
+#carousel .slider-item .slide-text {
+  color: #4F754A;
   font-size: 30px;
   font-family: Georgia;
   font-weight: 300;
   word-wrap: break-word;
   margin: 0 29px;
+  text-transform: uppercase;
 }
 #carousel .slick-arrow {
   display: none !important;
@@ -320,20 +322,42 @@ nav ul.active {
   display: none;
 }
 
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 @media (max-width: 1024px) {
-  #carousel .slide .slide-text {
-    font-size: 20px;
+  #carousel {
+    margin-top: 26px;
+    margin-bottom: 60px;
+  }
+  #carousel .slider-item .slide-text {
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
   }
-  #carousel .slide svg {
+  #carousel .slider-item svg {
     width: 55px;
     height: 55px;
   }
 }
 .about-me-section {
-  padding-top: 64px;
   padding-bottom: 178px;
 }
 .about-me-section .test {
@@ -355,6 +379,7 @@ nav ul.active {
   font-weight: 300;
   word-wrap: break-word;
   margin-bottom: 82px;
+  text-transform: uppercase;
 }
 .about-me-section .main-place-border .about-me-body {
   width: 95%;
@@ -384,7 +409,6 @@ nav ul.active {
 
 @media (max-width: 1024px) {
   .about-me-section {
-    padding-top: 40px;
     padding-bottom: 60px;
   }
   .about-me-section .main-place-border .about-me {
@@ -418,6 +442,7 @@ nav ul.active {
   font-weight: 300;
   word-wrap: break-word;
   margin-bottom: 90px;
+  text-transform: uppercase;
 }
 .services-section .svg-border {
   border: 1px solid #4F754A;
@@ -519,6 +544,7 @@ nav ul.active {
   font-weight: 400;
   word-wrap: break-word;
   padding-bottom: 26px;
+  text-transform: uppercase;
 }
 .customer-feedback-section .customer-feedback-text {
   width: 66%;
@@ -661,6 +687,9 @@ nav ul.active {
   .customer-feedback-section .grid-container .grid-item {
     padding: 8px;
   }
+  .customer-feedback-section .grid-container .grid-item .feedback-items-wrapper {
+    justify-content: center;
+  }
   .customer-feedback-section .grid-container .grid-item .feedback-header {
     font-size: 12px;
     font-weight: 500;
@@ -710,6 +739,7 @@ nav ul.active {
   font-family: Georgia;
   font-weight: 400;
   word-wrap: break-word;
+  text-transform: uppercase;
 }
 .faq .faq-wrapper .faq-header .faq-text {
   width: 341px;
@@ -742,9 +772,8 @@ nav ul.active {
   transition: max-height 0.5s ease;
 }
 .faq .faq-wrapper .accordion-content p {
-  padding: 10px;
   color: #342F2A;
-  font-size: 18px;
+  font-size: 16px;
   font-family: Raleway;
   font-weight: 400;
   line-height: 22.4px;
@@ -796,7 +825,7 @@ nav ul.active {
   margin-top: 164px;
 }
 .any-questions .HaveAnyQuestions {
-  width: 100%;
+  width: 50%;
   color: #4F754A;
   font-size: 35px;
   font-family: Georgia;
@@ -843,6 +872,12 @@ nav ul.active {
   line-height: 25.2px;
   word-wrap: break-word;
 }
+.any-questions .form-wrapper {
+  padding-left: 15%;
+}
+.any-questions .form-self {
+  width: 100%;
+}
 .any-questions .name,
 .any-questions .email,
 .any-questions .message {
@@ -860,6 +895,11 @@ nav ul.active {
   align-items: center;
   border-radius: 4px;
   border: 1px solid var(--main-color-1, #4F754A);
+  width: 100%;
+}
+.any-questions .form-control:focus {
+  outline: red;
+  box-shadow: none;
 }
 .any-questions .form-control::placeholder {
   color: #8E8E8E;
@@ -903,6 +943,9 @@ nav ul.active {
 @media (max-width: 1024px) {
   .any-questions {
     margin-top: 60px;
+  }
+  .any-questions .form-wrapper {
+    padding-left: unset;
   }
   .any-questions .HaveAnyQuestions {
     font-size: 20px;
@@ -991,7 +1034,6 @@ nav ul.active {
   line-height: 25.2px;
   word-wrap: break-word;
   text-align: center;
-  padding-bottom: 28px;
 }
 .service-background-section .service-wrapper .btn-primary {
   display: flex;
@@ -1010,9 +1052,9 @@ nav ul.active {
   font-weight: 600;
   line-height: normal;
   border: none;
-  margin-top: 61px;
   word-wrap: break-word;
   margin: 0 auto;
+  margin-top: 28px;
 }
 
 @media (max-width: 1024px) {
@@ -1240,6 +1282,15 @@ nav ul.active {
   gap: 81px;
   margin-bottom: 81px;
 }
+.fill-blanks-section .blanks-wrapper .blanks-inputs-wrapper .input-accept {
+  color: #7A7A7A;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143.682%;
+  padding-top: 14px;
+}
 .fill-blanks-section .blanks-wrapper .note-label,
 .fill-blanks-section .blanks-wrapper .resume-label,
 .fill-blanks-section .blanks-wrapper .linkedin-label,
@@ -1263,6 +1314,11 @@ nav ul.active {
   border-radius: 4px;
   border: 1px solid #BDBDBD;
   background: #FFF;
+}
+.fill-blanks-section .blanks-wrapper .form-control:focus {
+  border: 1px solid #4F754A;
+  outline: none;
+  box-shadow: none;
 }
 .fill-blanks-section .blanks-wrapper .form-control::placeholder {
   color: #7A7A7A;
@@ -1333,6 +1389,9 @@ input[type=file] {
   font-weight: 400;
   line-height: 143.682%;
 }
+.custom-file-label .upload-icon {
+  margin-right: 10px;
+}
 
 @media (max-width: 1024px) {
   .fill-blanks-section {
@@ -1368,6 +1427,10 @@ input[type=file] {
 .success-section .success-wrapper {
   flex-direction: column;
 }
+.success-section .success-wrapper .registered-wrapper {
+  padding-top: 25px;
+  padding-bottom: 77px;
+}
 .success-section .success-wrapper .circle-success {
   display: flex;
   justify-content: center;
@@ -1392,8 +1455,6 @@ input[type=file] {
   font-weight: 400;
   line-height: 22.4px;
   word-wrap: break-word;
-  padding-top: 25px;
-  padding-bottom: 77px;
   text-align: center;
 }
 .success-section .success-wrapper .next {

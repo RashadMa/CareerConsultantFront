@@ -1,17 +1,20 @@
 #carousel {
       border: 1.5px solid #4F754A;
       width: 100% !important;
+      margin-top: 105px;
+      margin-bottom: 100px;
 
-      .slide {
+      .slider-item {
             display: flex !important;
 
             .slide-text {
-                  color: #342F2A;
+                  color: #4F754A;
                   font-size: 30px;
                   font-family: Georgia;
                   font-weight: 300;
                   word-wrap: break-word;
                   margin: 0 29px;
+                  text-transform: uppercase;
             }
       }
 
@@ -24,16 +27,43 @@
       }
 }
 
+.slider-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+}
+
+.slider-track {
+      display: flex;
+      animation: scroll 20s linear infinite;
+}
+
+
+@keyframes scroll {
+      0% {
+            transform: translateX(0);
+      }
+
+      100% {
+            transform: translateX(-100%);
+      }
+}
+
+
 @media (max-width: 1024px) {
       #carousel {
-            .slide {
+            margin-top: 26px;
+            margin-bottom: 60px;
+
+            .slider-item {
                   .slide-text {
-                        font-size: 20px;
+                        font-size: 18px;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
                   }
-                  svg{
+
+                  svg {
                         width: 55px;
                         height: 55px;
                   }

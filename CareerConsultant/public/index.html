@@ -5,10 +5,6 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet" />
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet" />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -16,6 +12,10 @@
       <link rel="stylesheet" href="./css/style.css" />
       <link rel="stylesheet" href="./css/custom.css" />
       <script src="./js/index.js" defer></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -109,7 +109,7 @@
                                           <p class="count">
                                                 10+ </p>
                                           <p class="infos">
-                                                Years<br>experience</p>
+                                                Years experience</p>
                                     </div>
                               </div>
                               <div class="info-counter-item-wrapper col-4 d-flex justify-center align-center col-4">
@@ -128,8 +128,8 @@
 
             </section>
             <section class="labels-section">
-                  <div id="carousel">
-                        <div class="slide justify-center align-center">
+                  <div id="carousel" class="slider">
+                        <div class="slider-item justify-center align-center">
                               <svg width="86" height="86" viewBox="0 0 86 86" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g id="Frame 219">
@@ -138,9 +138,9 @@
                                                 fill="#A1A864" />
                                     </g>
                               </svg>
-                              <h2 class="slide-text">CAREER CONSULTING</h2>
+                              <h2 class="slide-text">career CONSULTING</h2>
                         </div>
-                        <div class="slide justify-center align-center">
+                        <div class="slider-item justify-center align-center">
                               <svg width="86" height="86" viewBox="0 0 86 86" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g id="Frame 219">
@@ -151,7 +151,7 @@
                               </svg>
                               <h2 class="slide-text">PROFESSIONAL CV</h2>
                         </div>
-                        <div class="slide justify-center align-center">
+                        <div class="slider-item justify-center align-center">
                               <svg width="86" height="86" viewBox="0 0 86 86" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g id="Frame 219">
@@ -162,7 +162,7 @@
                               </svg>
                               <h2 class="slide-text">MOTIVATION</h2>
                         </div>
-                        <div class="slide justify-center align-center">
+                        <div class="slider-item justify-center align-center">
                               <svg width="86" height="86" viewBox="0 0 86 86" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g id="Frame 219">
@@ -173,7 +173,7 @@
                               </svg>
                               <h2 class="slide-text">IMPROVE</h2>
                         </div>
-                        <div class="slide justify-center align-center">
+                        <div class="slider-item justify-center align-center">
                               <svg width="86" height="86" viewBox="0 0 86 86" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g id="Frame 219">
@@ -210,7 +210,10 @@
                                                 1
                                                 year. After returning from China, I continued my career by taking online
                                                 English
-                                                classes for a while.<br /><br />My activity at Code Academy was more
+                                                classes for a while.
+                                          </p>
+                                          <br>
+                                          <p class="about-me-text">My activity at Code Academy was more
                                                 long-term
                                                 and
                                                 versatile. At Code Academy, I initially worked as an English teacher,
@@ -227,8 +230,7 @@
                                                 worked
                                                 as an English teacher as well as an instructional designer in an
                                                 American
-                                                company.
-                                          </p>
+                                                company.</p>
                                     </div>
                                     <div class="col-4 col-md-12">
                                           <div class="row justify-center align-center">
@@ -451,6 +453,7 @@
 
                               </div>
                         </div>
+                  </div>
             </section>
             <section id="faq" class="faq">
                   <div class="container">
@@ -543,7 +546,7 @@
                         <div class="row">
                               <div class="col-4 col-md-12">
                                     <p class="HaveAnyQuestions">
-                                          Have Any<br>Questions?</p>
+                                          Have Any Questions?</p>
                                     <div class="contact-info">
                                           <p class="contact">
                                                 Contact</p>
@@ -568,17 +571,18 @@
                                           </div>
                                     </div>
                               </div>
-                              <div class="col-8 col-md-12">
-                                    <form>
+                              <div class="col-8 col-md-12 row form-wrapper">
+                                    <form class="form-self">
                                           <div class="row">
-                                                <div class="col-6 col-md-12">
+                                                <div class="col-5 col-md-12">
                                                       <div class="row">
                                                             <label class="name" for="name">Name*</label>
                                                       </div>
                                                       <input placeholder="Enter your name" type="text" id="name"
                                                             name="name" class="col-6 col-md-12 form-control" required>
                                                 </div>
-                                                <div class="col-6 col-md-12">
+                                                <div class="col-2"></div>
+                                                <div class="col-5 col-md-12">
                                                       <div class="row">
                                                             <label class="email" for="email">E-mail*</label>
                                                       </div>
@@ -612,7 +616,7 @@
       <footer class="footer">
             <div class="footer-wrapper">
                   <p class="copyright">
-                        Copyright © 2023 Lamiya Safarova. All rights reserved. <br /></p>
+                        Copyright © 2023 Lamiya Safarova. All rights reserved.</p>
             </div>
       </footer>
 </body>

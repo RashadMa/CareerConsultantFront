@@ -9,6 +9,7 @@
             font-weight: 400;
             word-wrap: break-word;
             padding-bottom: 26px;
+            text-transform: uppercase;
       }
 
       .customer-feedback-text {
@@ -174,6 +175,10 @@
 
                   .grid-item {
                         padding: 8px;
+
+                        .feedback-items-wrapper {
+                              justify-content: center;
+                        }
 
                         .feedback-header {
                               font-size: 12px;
