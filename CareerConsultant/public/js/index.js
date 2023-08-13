@@ -1,29 +1,3 @@
-// $("#carousel").slick({
-//   slidesToShow: 3,
-//   autoplay: true,
-//   autoplaySpeed: 0,
-//   speed: 2000,
-//   cssEase: "linear",
-//   infinite: true,
-//   focusOnSelect: false,
-//   responsive: [
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         arrows: false,
-//         slidesToShow: 3,
-//       },
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         arrows: false,
-//         slidesToShow: 1,
-//       },
-//     },
-//   ],
-// });
-
 $(document).ready(function () {
   $(".slider").slick({
     autoplay: true,
@@ -33,15 +7,12 @@ $(document).ready(function () {
     centerMode: true,
     variableWidth: true,
     autoplay: true,
-    // autoplaySpeed: 500, // Adjust autoplay speed as needed
     autoplaySpeed: 0,
     speed: 2500,
     cssEase: "linear",
     arrows: false,
   });
 });
-
-//////
 
 const accordionHeaders = document.querySelectorAll(".accordion-header");
 
@@ -57,15 +28,18 @@ accordionHeaders.forEach((accordionHeader) => {
   });
 });
 
-let hamMenuIcon = document.getElementById("ham-menu");
-let navBar = document.getElementById("nav-bar");
-let navLinks = navBar.querySelectorAll("li");
+const mobileMenuToggle = document.getElementById("mobile-menu");
+const navList = document.getElementById("nav-list");
+const navListItems = navList.querySelectorAll("li");
 
-hamMenuIcon.addEventListener("click", () => {
-  navBar.classList.toggle("active");
+mobileMenuToggle.addEventListener("click", () => {
+  mobileMenuToggle.classList.toggle("active");
+  navList.classList.toggle("active");
 });
-navLinks.forEach((navLinks) => {
-  navLinks.addEventListener("click", () => {
-    navBar.classList.remove("active");
+
+navListItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    mobileMenuToggle.classList.remove("active");
+    navList.classList.remove("active");
   });
 });

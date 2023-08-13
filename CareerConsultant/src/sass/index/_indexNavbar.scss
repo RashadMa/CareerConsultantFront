@@ -1,3 +1,29 @@
+.nav-line {
+      width: 0;
+      height: 25px;
+      border: 1px #4F754A solid;
+}
+
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      transition: ease 0.3s;
+      height: 80px;
+
+      .nav-wrapper {
+            width: 85%;
+            margin: 0 auto;
+      }
+}
+
 .logo-ellipse {
       width: 20px;
       height: 20px;
@@ -6,8 +32,7 @@
 }
 
 .logo {
-      width: 100%;
-      height: 100%;
+      width: 213px;
       justify-content: flex-start;
       align-items: center;
       gap: 5px;
@@ -22,92 +47,113 @@
       word-wrap: break-word
 }
 
-.nav-container {
+.nav-list {
+      list-style: none;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin: 0 auto;
-      height: 100px;
-      width: 100%;
-      background: #FFFFFF;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 999;
-      transition: all 0.3s;
+      transition: max-height 0.3s ease-in-out;
 
-      .nav-list-item {
+      .nav-list-items {
             color: #4F754A;
             font-size: 18px;
             font-family: Raleway;
             font-weight: 500;
       }
+}
 
-      .nav-line {
-            width: 0;
-            height: 25px;
-            border: 1px #4F754A solid;
+.nav-list li {
+      margin-right: 45px;
+}
+
+.nav-list li:last-child {
+      margin-right: 0;
+}
+
+.language button {
+      margin-left: 10px;
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+}
+
+.menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+}
+
+.nav-lang {
+      width: 25px;
+      height: 25px;
+      padding-top: 6.50px;
+      padding-bottom: 6.50px;
+      padding-left: 6px;
+      padding-right: 5px;
+      border-radius: 1000px;
+      border: 0.50px #4F754A solid;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+
+      .nav-lang-text {
+            color: #4F754A;
+            font-size: 10px;
+            font-family: Raleway;
+            font-weight: 500;
+            word-wrap: break-word
       }
-
-      .nav-lang {
-            width: 25px;
-            height: 25px;
-            padding-top: 6.50px;
-            padding-bottom: 6.50px;
-            padding-left: 6px;
-            padding-right: 5px;
-            border-radius: 1000px;
-            border: 0.50px #4F754A solid;
-            justify-content: center;
-            align-items: center;
-            display: inline-flex;
-
-            .nav-lang-text {
-                  color: #4F754A;
-                  font-size: 10px;
-                  font-family: Raleway;
-                  font-weight: 500;
-                  word-wrap: break-word
-            }
-      }
-
-      .hamburger-menu {
-            display: none;
-      }
-
 }
 
 .p-20 {
       margin-right: 20px;
 }
 
-.nav-wrapper {
-      width: 85%;
-      margin: 0 auto;
-}
-
-#ham-menu {
+.menu-toggle {
       display: none;
+      flex-direction: column;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
 }
 
-nav ul.active {
-      left: 0;
+.menu-toggle.active {
+      transform: rotate(90deg);
 }
 
-@media (max-width: 1024px) {
-      .nav-container .nav-wrapper .col-6 .nav-links {
-            // display: none;
-      }
+.bar {
+      height: 1.5px;
+      width: 20px;
+      background-color: #111;
+      margin: 2.6px 0;
+      transition: transform 0.3s ease-in-out;
+}
 
-      .nav-container .nav-wrapper .col-6 .hamburger-menu {
-            display: flex;
-            cursor: pointer;
-            justify-content: end;
-      }
+.menu-toggle.active .bar:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+}
 
-      .logo-text {
-            font-size: 16px;
+.menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+}
+
+
+@media (max-width: 1070px) {
+      .nav-list {
+            display: none;
+            flex-direction: column;
+            background-color: #FFF;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            padding: 40px;
+            transition: max-height 0.3s ease;
+
       }
 
       .logo-ellipse {
@@ -115,40 +161,32 @@ nav ul.active {
             height: 15px;
       }
 
-      .nav-container {
+      .logo-text {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 149.9%;
+      }
+
+      .navbar {
             height: 50px;
       }
 
-      #ham-menu {
+      .nav-line {
+            display: none;
+      }
+
+      .nav-list.active {
             display: flex;
-            justify-content: end;
       }
 
-      nav ul {
-            background-color: #fff;
-            position: fixed;
-            left: -100vw;
-            height: 100%;
+      .nav-list li {
+            margin: 0;
+            text-align: center;
+            padding: 12.5px 0;
+      }
+
+      .menu-toggle {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            transition: 0.5s;
-            gap: 0;
-            z-index: 200;
-            top: 50px;
-            padding-top: 40px;
-            li{
-                  padding-bottom: 25px !important;
-                  width: unset !important;
-            }
       }
-
-      #nav-bar {
-            justify-content: start;
-            .seperator {
-                  display: none;
-            }
-      }
-
 }

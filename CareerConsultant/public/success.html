@@ -20,9 +20,9 @@
 
 <body>
       <header>
-            <nav class="nav-container">
-                  <div class="nav-wrapper d-flex justify-center align-center">
-                        <div class="col-6 col-md-10">
+            <nav class="navbar">
+                  <div class="nav-wrapper d-flex justify-between align-center">
+                        <div class="logo">
                               <a href="./index.html" class="logo d-flex">
                                     <div class="logo-ellipse"></div>
                                     <div class="logo-text-wrapper">
@@ -30,64 +30,41 @@
                                     </div>
                               </a>
                         </div>
-                        <div class="col-6 col-md-2">
-                              <div class="row">
-                                    <ul id="nav-bar" class="nav-links justify-center align-center row">
-                                          <li class="col-2">
-                                                <a class="nav-list-item" href="./index.html#about-me-section">About
-                                                      Me</a>
-                                          </li>
-                                          <li class="col-2">
-                                                <a class="nav-list-item" href="./services.html">Services</a>
-                                          </li>
-                                          <li class="col-2">
-                                                <a class="nav-list-item"
-                                                      href="./index.html#feedback-section">Feedback</a>
-                                          </li>
-                                          <li class="col-2">
-                                                <a class="nav-list-item" href="./index.html#faq">FAQ</a>
-                                          </li>
-                                          <li class="col-2">
-                                                <a class="nav-list-item" href="./index.html#contact">Contact</a>
-                                          </li>
-                                          <li class="col-2">
-                                                <div class="row justify-center align-center">
-                                                      <div class="col-6 seperator">
-                                                            <div class="nav-line"></div>
-                                                      </div>
-                                                      <div class="col-6 col-md-12">
-                                                            <div class="row">
-                                                                  <div class="col-6">
-                                                                        <div class="nav-lang p-20">
-                                                                              <p class="nav-lang-text">EN</p>
-                                                                        </div>
-                                                                  </div>
-                                                                  <div class="col-6">
-                                                                        <div class="nav-lang">
-                                                                              <p class="nav-lang-text">AZ</p>
-                                                                        </div>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                </div>
-                                          </li>
-                                    </ul>
-                              </div>
-                              <div id="ham-menu" class="row align-center hamburger-menu">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                          fill="none">
-                                          <path d="M3 5H21M3 12H21M3 19H21" stroke="#4A4A4A" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                              </div>
+                        <div class="menu-toggle" id="mobile-menu">
+                              <span class="bar"></span>
+                              <span class="bar"></span>
+                              <span class="bar"></span>
                         </div>
+                        <ul class="nav-list" id="nav-list">
+                              <li><a class="nav-list-items" href="#about-me-section">About Me</a></li>
+                              <li><a class="nav-list-items" href="./services.html">Services</a></li>
+                              <li><a class="nav-list-items" href="#feedback-section">Feedback</a></li>
+                              <li><a class="nav-list-items" href="#faq">FAQ</a></li>
+                              <li><a class="nav-list-items" href="#contact">Contact</a></li>
+                              <li>
+                                    <div class="nav-line"></div>
+                              </li>
+                              <li class="language">
+                                    <div class="row">
+                                          <div class="col-6">
+                                                <div class="nav-lang p-20">
+                                                      <a class="nav-lang-text">EN</a>
+                                                </div>
+                                          </div>
+                                          <div class="col-6">
+                                                <div class="nav-lang">
+                                                      <a class="nav-lang-text">AZ</a>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </li>
+                        </ul>
                   </div>
             </nav>
       </header>
       <main>
             <section class="success-section">
                   <div class="container">
-
                         <div class="row">
                               <div class="col-12 success-wrapper d-flex justify-center align-center">
                                     <div class="circle-success">
