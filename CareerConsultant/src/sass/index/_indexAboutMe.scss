@@ -27,15 +27,16 @@
 
             .about-me-body {
                   width: 95%;
-
                   .about-me-text {
-                        width: 80%;
-                        color: #342F2A;
-                        font-size: 16px;
-                        font-family: Raleway;
-                        font-weight: 300;
-                        line-height: 22.40px;
-                        word-wrap: break-word
+                        p {
+                              width: 80%;
+                              color: #342F2A;
+                              font-size: 16px;
+                              font-family: Raleway;
+                              font-weight: 300;
+                              line-height: 22.40px;
+                              word-wrap: break-word
+                        }
                   }
 
                   .about-me-img-wrapper {

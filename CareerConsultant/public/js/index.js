@@ -43,3 +43,14 @@ navListItems.forEach((item) => {
     navList.classList.remove("active");
   });
 });
+
+const fileInput = document.getElementById('file-upload');
+const fileLabel = document.getElementById('fileLabel');
+
+fileInput.addEventListener('change', () => {
+    if (fileInput.files.length > 0) {
+        fileLabel.innerText = 'File uploaded';
+    } else {
+        fileLabel.innerText = 'Upload your resume';
+    }
+});

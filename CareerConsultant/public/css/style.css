@@ -93,6 +93,7 @@
   justify-content: center;
   align-items: center;
   display: inline-flex;
+  cursor: pointer;
 }
 .nav-lang .nav-lang-text {
   color: #4F754A;
@@ -428,7 +429,7 @@
 .about-me-section .main-place-border .about-me-body {
   width: 95%;
 }
-.about-me-section .main-place-border .about-me-body .about-me-text {
+.about-me-section .main-place-border .about-me-body .about-me-text p {
   width: 80%;
   color: #342F2A;
   font-size: 16px;
@@ -581,7 +582,7 @@
   padding-top: 143.5px;
 }
 .customer-feedback-section .customer-feedback-header {
-  width: 50%;
+  width: 80%;
   color: #4F754A;
   font-size: 35px;
   font-family: Georgia;
@@ -786,7 +787,7 @@
   text-transform: uppercase;
 }
 .faq .faq-wrapper .faq-header .faq-text {
-  width: 341px;
+  max-width: 341px;
   color: #342F2A;
   font-size: 16px;
   font-family: Raleway;
@@ -869,7 +870,7 @@
   margin-top: 164px;
 }
 .any-questions .HaveAnyQuestions {
-  width: 50%;
+  width: 65%;
   color: #4F754A;
   font-size: 35px;
   font-family: Georgia;
@@ -1099,6 +1100,7 @@
   word-wrap: break-word;
   margin: 0 auto;
   margin-top: 28px;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -1397,7 +1399,6 @@
 }
 .fill-blanks-section .blanks-wrapper .country-select {
   display: grid;
-  grid-template-columns: 1fr 5fr;
   grid-gap: 14px;
 }
 .fill-blanks-section .blanks-wrapper .form-control-country {

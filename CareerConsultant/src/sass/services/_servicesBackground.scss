@@ -49,7 +49,7 @@
                   word-wrap: break-word;
                   margin: 0 auto;
                   margin-top: 28px;
-
+                  cursor: pointer;
             }
       }
 }
@@ -57,7 +57,7 @@
 @media (max-width: 1024px) {
       .service-background-section {
             background-repeat: no-repeat;
-            background-size:cover;
+            background-size: cover;
 
             .service-wrapper {
                   padding: 92px 0 43px 0;

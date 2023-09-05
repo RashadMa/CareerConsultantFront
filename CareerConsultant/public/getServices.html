@@ -36,25 +36,25 @@
                               <span class="bar"></span>
                         </div>
                         <ul class="nav-list" id="nav-list">
-                              <li><a class="nav-list-items" href="#about-me-section">About Me</a></li>
+                              <li><a class="nav-list-items" href="index.html#about-me-section">About Me</a></li>
                               <li><a class="nav-list-items" href="./services.html">Services</a></li>
-                              <li><a class="nav-list-items" href="#feedback-section">Feedback</a></li>
-                              <li><a class="nav-list-items" href="#faq">FAQ</a></li>
-                              <li><a class="nav-list-items" href="#contact">Contact</a></li>
+                              <li><a class="nav-list-items" href="index.html#feedback-section">Feedback</a></li>
+                              <li><a class="nav-list-items" href="index.html#faq">FAQ</a></li>
+                              <li><a class="nav-list-items" href="index.html#contact">Contact</a></li>
                               <li>
                                     <div class="nav-line"></div>
                               </li>
                               <li class="language">
                                     <div class="row">
                                           <div class="col-6">
-                                                <div class="nav-lang p-20">
-                                                      <a class="nav-lang-text">EN</a>
-                                                </div>
+                                                <a class="nav-lang p-20">
+                                                      <p class="nav-lang-text">EN</p>
+                                                </a>
                                           </div>
                                           <div class="col-6">
-                                                <div class="nav-lang">
-                                                      <a class="nav-lang-text">AZ</a>
-                                                </div>
+                                                <a class="nav-lang">
+                                                      <p class="nav-lang-text">AZ</p>
+                                                </a>
                                           </div>
                                     </div>
                               </li>
@@ -92,6 +92,7 @@
                         <div class="preperation-img d-flex col-5 col-md-12">
                               <img class="img" src="./assets/media/background/getServices.png" alt="">
                         </div>
+                  </div>
             </section>
             <section class="fill-blanks-section">
                   <div class="container">
@@ -120,15 +121,9 @@
                                                                   Number*</label>
                                                       </div>
                                                       <div class="country-select">
-                                                            <select id="country" name="country"
-                                                                  class="form-control-country">
-                                                                  <option value="az">🇦🇿</option>
-                                                                  <option value="ee">🇪🇪</option>
-                                                                  <option value="tr">🇹🇷</option>
-                                                                  <option value="us">🇺🇸</option>
-                                                            </select>
                                                             <input class="form-control" type="text" id="phone"
-                                                                  name="phone" pattern="[0-9]+" placeholder="+994">
+                                                                  name="phone" pattern="[0-9]+"
+                                                                  placeholder="Enter your number">
                                                       </div>
                                                 </div>
                                                 <div class="">
@@ -150,8 +145,9 @@
                                                       <div class="row">
                                                             <p class="resume-label" for="resume">Resume*</p>
                                                       </div>
-                                                      <label for="file-upload" class="custom-file-label">
-                                                            <svg class="upload-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                      <label for="file-upload" class="custom-file-label" id="fileLabel">
+                                                            <svg class="upload-icon" width="24" height="24"
+                                                                  viewBox="0 0 24 24" fill="none"
                                                                   xmlns="http://www.w3.org/2000/svg">
                                                                   <g id="ph:upload-simple-thin">
                                                                         <path id="Vector"
@@ -159,9 +155,7 @@
                                                                               fill="#5D7EA4" />
                                                                   </g>
                                                             </svg>
-
-                                                            Upload your
-                                                            resume</label>
+                                                            Upload your resume</label>
                                                       <input type="file" id="file-upload" class="file-input"
                                                             accept=".jpg, .jpeg, .png, .doc, .docx, .pdf">
                                                       <p class="input-accept">DOC, DOCX, PDF</p>
