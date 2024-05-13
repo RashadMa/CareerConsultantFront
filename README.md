@@ -1,1 +1,1 @@
-# CareerConsultantFront<img width="1680" alt="Screenshot 2023-10-27 at 16 16 06" src="https://github.com/RashadMa/CareerConsultantFront/assets/87971037/919fb6ee-1d97-4245-96c5-790c7310ff8e">
+# CareerConsultantFront<img width="1676" alt="career" src="https://github.com/RashadMa/CareerConsultantFront/assets/87971037/4c179741-6239-4d08-b9e7-4f85124009a4">
